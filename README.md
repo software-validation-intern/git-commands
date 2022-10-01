@@ -2,13 +2,17 @@
 
 ## Stage changes
 ```python
-git add -A stages all changes
-git add . stages new files and modifications, without deletions (on the current directory and its subdirectories).
-git add -u stages modifications and deletions, without new files
-git add * means add all files in the current directory, except for files whose name begin with a dot.
+git add -A | stages all changes
+OR
+git add . | stages new files and modifications, without deletions (on the current directory and its subdirectories).
+OR
+git add -u | stages modifications and deletions, without new files
+OR
+git add * | means add all files in the current directory, except for files whose name begin with a dot.
 ```
 ```python
 git add -A is equivalent to git add --all
+OR
 git add -u is equivalent to git add --update
 ```
 
@@ -20,4 +24,12 @@ git switch -c [new branch name]
 ## Push locally created branch to remote [aka update on Github]
 ```python
 git push --set-upstream origin [new branch name]
+```
+
+
+## Commit staged changes
+```python
+git commit -m "[committ message]" | Commit staged changes directly with message
+OR
+git commit -a | Opens a editor to type in commit messages
 ```

@@ -54,4 +54,7 @@ git remote -v # To check <remote-name>, the <remote-name> is the name on the far
 # Branch name is the one you see on Git bash, self explonatory
 ```
 
-
+## Delete local branch that is already merged into the master/main branch on remote
+```python
+git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
+```

@@ -49,6 +49,7 @@ git push -f <remote-name> <branch-name> # To update the Github repo with the rem
 # eg. git push -f origin master 
 
 git log # To check the <old-commit-id>
+git log --oneline -n # The n is the number of logs you want to show
 git remote -v # To check <remote-name>, the <remote-name> is the name on the far left
 # Branch name is the one you see on Git bash, self explonatory
 ```

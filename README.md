@@ -19,18 +19,20 @@ git add -u is equivalent to git add --update
 
 ## Create new branch
 ```python
-git switch -c [new branch name]
+git switch -c <new branch name>
 ```
 
 ## Push locally created branch to remote [aka update new branch to be on Github]
 ```python
-git push --set-upstream origin [new branch name]
+git push --set-upstream origin <new branch name>
+OR
+git push -u origin <branch>
 ```
 
 
 ## Commit staged changes
 ```python
-git commit -m "[committ message]" # Commit staged changes directly with message
+git commit -m "<committ message>" # Commit staged changes directly with message
 OR
 git commit -a # Opens a editor to type in commit messages
 ```

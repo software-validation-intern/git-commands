@@ -60,3 +60,8 @@ git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
 OR
 git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d
 ```
+
+## See what files are being tracked
+```python
+git ls-tree -r master --name-only
+```

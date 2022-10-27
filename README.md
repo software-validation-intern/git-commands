@@ -1,4 +1,4 @@
-# git-functions-test
+# Useful Git functions
 ## https://rogerdudler.github.io/git-guide/
 
 ## Stage changes

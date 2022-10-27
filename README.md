@@ -57,4 +57,6 @@ git remote -v # To check <remote-name>, the <remote-name> is the name on the far
 ## Delete local branch that is already merged into the master/main branch on remote
 ```python
 git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
+OR
+git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d
 ```

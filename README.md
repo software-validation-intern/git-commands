@@ -42,4 +42,15 @@ OR
 git push origin
 ```
 
+## Revert back to a certain commit
+```python
+git reset --hard <old-commit-id>
+git push -f <remote-name> <branch-name> # To update the Github repo with the remote repo
+# eg. git push -f origin master 
+
+git log # To check the <old-commit-id>
+git remote -v # To check <remote-name>, the <remote-name> is the name on the far left
+# Branch name is the one you see on Git bash, self explonatory
+```
+
 

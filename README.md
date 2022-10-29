@@ -1,7 +1,9 @@
 # Useful Git functions
 ## https://rogerdudler.github.io/git-guide/
 
-## Stage changes
+<br></br>
+
+# Stage changes
 ```python
 git add -A # stages all changes
 OR
@@ -17,34 +19,45 @@ OR
 git add -u is equivalent to git add --update
 ```
 
-## Create new branch
+<br></br>
+
+
+# Create new branch
 ```python
 git switch -c <new branch name>
 ```
 
-## Push locally created branch to remote [aka update new branch to be on Github]
+<br></br>
+
+
+# Push locally created branch to remote [aka update new branch to be on Github]
 ```python
 git push --set-upstream origin <new branch name>
 OR
 git push -u origin <branch>
 ```
 
+<br></br>
 
-## Commit staged changes
+# Commit staged changes
 ```python
 git commit -m "<committ message>" # Commit staged changes directly with message
 OR
 git commit -a # Opens a editor to type in commit messages
 ```
 
-## Push committed changes to remote [aka push committed changes to be on Github]
+<br></br>
+
+# Push committed changes to remote [aka push committed changes to be on Github]
 ```python
 git push
 OR
 git push origin
 ```
 
-## Revert back to a certain commit
+<br></br>
+
+# Revert back to a certain commit
 ```python
 git reset --hard <old-commit-id>
 git push -f <remote-name> <branch-name> # To update the Github repo with the remote repo
@@ -56,14 +69,24 @@ git remote -v # To check <remote-name>, the <remote-name> is the name on the far
 # Branch name is the one you see on Git bash, self explonatory
 ```
 
-## Delete local branch that is already merged into the master/main branch on remote
+<br></br>
+
+# Delete local branch that is already merged into the master/main branch on remote
 ```python
 git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
 OR
 git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d
 ```
 
-## See what files are being tracked
+<br></br>
+
+# See what files are being tracked
 ```python
 git ls-tree -r master --name-only
 ```
+
+<br></br>
+
+# Markdown guide
+- [Markdown syntax docs](https://www.markdownguide.org/basic-syntax/)
+- [Include image in markdown](https://stackoverflow.com/questions/42961712/how-to-include-image-as-markdown-in-visual-studio-code)

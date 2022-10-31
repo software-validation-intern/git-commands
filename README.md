@@ -85,6 +85,11 @@ git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d
 git ls-tree -r master --name-only
 ```
 
+# Remove exisiting loca files/folders that are already being tracked by git
+```python
+git rm -r --cached --ignore-unmatch folder_name
+```
+
 <br></br>
 
 # Markdown guide

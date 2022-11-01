@@ -97,3 +97,12 @@ git rm -r --cached --ignore-unmatch folder_name
 # Markdown guide
 - [Markdown syntax docs](https://www.markdownguide.org/basic-syntax/)
 - [Include image in markdown](https://stackoverflow.com/questions/42961712/how-to-include-image-as-markdown-in-visual-studio-code)
+
+<br></br>
+
+# Export current environment's package list to a requirements.txt
+```python
+pip install pipreqs
+
+pipreqs /path/to/project
+```

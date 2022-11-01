@@ -105,4 +105,8 @@ git rm -r --cached --ignore-unmatch folder_name
 pip install pipreqs
 
 pipreqs /path/to/project
+
+OR
+
+pip3 freeze > requirements.txt  # This will create the file at whichever directory you are currently in
 ```

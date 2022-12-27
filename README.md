@@ -110,3 +110,11 @@ OR
 
 pip3 freeze > requirements.txt  # This will create the file at whichever directory you are currently in
 ```
+
+<br></br>
+
+# If you accidentally revert a commit and cannot see its history in changes anymore?
+```python
+git reflog
+git checkout HEAD@{n}
+```

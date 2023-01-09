@@ -87,9 +87,15 @@ git ls-tree -r master --name-only
 
 <br></br>
 
-# Remove exisiting loca files/folders that are already being tracked by git
+# Remove exisiting local files/folders that are already being tracked by git
 ```python
 git rm -r --cached --ignore-unmatch folder_name
+```
+
+<br></br>
+# Remove all existing tracked files by git and commit
+```python
+git rm -r --cached . && git add . && git commit -am "Remove ignored files"
 ```
 
 <br></br>

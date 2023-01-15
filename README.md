@@ -1,4 +1,4 @@
-# Useful Git functions
+# Useful Git commands...also in case i messed up
 ## https://rogerdudler.github.io/git-guide/
 
 <br></br>
